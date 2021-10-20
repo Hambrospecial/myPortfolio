@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Courgette&family=Dancing+Script:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Festive&family=Rubik+Beastly&family=Sevillana&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&family=Scheherazade+New&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo"
+        ><div class="mylogo">
+          <span class="headlogo2">H</span>ambro<span class="headlogo2">S</span
+          >pecial
+        </div></a
+      >
+      <input type="checkbox" class="menu-btn" id="menu-btn" />
+      <label for="menu-btn" class="menu-icon"
+        ><span class="nav-icon"></span
+      ></label>
+      <ul class="menu">
+        <li><a href="#">home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#portfolio">portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </header>
+
+    <div id="heroPage">
+      <div class="hero-page">
+        <div class="hero_description">
+          <p>Hey, I'm</p>
+          <p class="name">Hamid Ibrahim</p>
+          <p class="profession">
+            an educationist, <br />a software engineer...
+          </p>
+          <div class="btns">
+            <button class="btn">about me</button>
+            <button class="btn">portfolio</button>
+          </div>
+        </div>
+        <div class="hero_image">
+          <img src="images/hambro.jpg" alt="my image" />
+        </div>
+      </div>
+    </div>
+
+    <div id="about">
+      <div class="aboutme abt">
+        <h3>About Me</h3>
+        <p>
+          I am a professional educationist and a software engineer in view.
+          Having ability to work both independently and as a supportive team
+          member. Extensive experience in teaching and leading groups for a
+          resounding achievement. A very good team player working with people
+          with diverse backgrounds and having the ability to resolve conflicting
+          ideas. Diversity and inclusion are a key area of interest for me while
+          I am passionate learning new skills.
+        </p>
+      </div>
+      <div class="about_image abt">
+        <img src="images/hamid2.jpg" alt="my image" />
+      </div>
+      <div class="skills abt">
+        <h3>Programming skills</h3>
+        <div>
+          <a href="#"><button>HTML</button></a>
+          <a href="#"><button>CSS</button></a>
+          <a href="#"><button>JAVASCRIPT</button></a>
+          <a href="#"><button>JAVA</button></a>
+        </div>
+      </div>
+      <div class="certifications abt">
+        <h3>Programming certifications</h3>
+        <p>
+          Responsive web design
+          <a
+            href="https://www.freecodecamp.org/certification/hambrospecial/responsive-web-design"
+            target="_blank"
+            ><img src="images/responsive.png" width="20rem" alt="the cert"
+          /></a>
+        </p>
+        <p>
+          Javascript algorithms and data structures
+          <a
+            href="https://www.freecodecamp.org/certification/hambrospecial/javascript-algorithms-and-data-structures"
+            target="_blank"
+            ><img src="images/js.png" width="20rem" alt="the cert"
+          /></a>
+        </p>
+      </div>
+      <div class="aboutbtn abt">
+        <a href="#contact">
+          <button class="btn">contact me</button>
+        </a>
+      </div>
+    </div>
+
+    <div id="portfolio">
+      <h3>Recent Works</h3>
+      <div class="projects">
+        <div class="project quizapp">
+          <a href="https://hambrosquizapp.netlify.app/" target="_blank"
+            ><img src="images/quizapp.png" alt=""
+          /></a>
+        </div>
+        <div class="project guessapp">
+          <img src="images/guess.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div id="contact">
+      <form action="">
+        <fieldset>
+          <legend>Contact Me</legend>
+          <input type="text" id="name" class="form_input" placeholder="Name" />
+
+          <input
+            type="email"
+            id="mail"
+            class="form_input"
+            placeholder="Email"
+          />
+
+          <textarea
+            name="comment"
+            id="comment"
+            cols="30"
+            rows="3"
+            placeholder="Enter your comments..."
+          ></textarea>
+
+          <input class="btn" type="submit" value="Send Message" />
+        </fieldset>
+      </form>
+    </div>
+    <footer>
+      <div class="contact-links">
+        <a
+          href="https://facebook.com/ibrahim.hamid.718"
+          target="_blank"
+          class="contact-details"
+          ><i class="fab fa-facebook-square"></i> Facebook</a
+        >
+        <a
+          id="profile-link"
+          href="https//github.com/Hambrospecial"
+          target="_blank"
+          class="contact-details"
+          ><i class="fab fa-github"></i> GitHub</a
+        >
+        <a
+          href="https://twitter.com/hambrospecial1?s=08"
+          target="_blank"
+          class="contact-details"
+          ><i class="fab fa-linkedin-in"></i> LinkedIn</a
+        >
+        <a href="mailto:hambrospecial@gmail.com" class="contact-details"
+          ><i class="fas fa-at"></i> Send a mail</a
+        >
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,485 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  transform: 5s all ease;
+}
+
+a {
+  color: #000;
+}
+
+.header {
+  background: #2495e1;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.2);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background: #2495e1ab;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+.header ul a {
+  display: block;
+  padding: 2rem;
+  border-right: 1px solid #aaa;
+  text-decoration: none;
+}
+
+.header .logo {
+  float: left;
+  display: block;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.mylogo {
+  background-color: rgba(221, 221, 221, 0.809);
+  border-radius: 20%;
+  color: #666;
+  /* padding: 0.3rem; */
+  font-family: "Sevillana";
+  outline: 2px ridge rgba(255, 255, 255, 0.796);
+  outline-offset: 1.5px;
+}
+
+.headlogo2 {
+  color: rgb(255, 166, 0);
+}
+.header ul a:hover {
+  background: #ddd;
+}
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+.header .menu-icon {
+  padding: 28px 20px;
+  position: relative;
+  float: right;
+  cursor: pointer;
+}
+
+.header .menu-icon .nav-icon {
+  background: #333;
+  display: block;
+  height: 2px;
+  width: 18px;
+  position: relative;
+  transition: background 0.2s ease-out;
+}
+
+.header .menu-icon .nav-icon::before {
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 5px;
+  transition: all 0.2s ease-out;
+}
+
+.header .menu-icon .nav-icon::after {
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -5px;
+  transition: all 0.2s ease-out;
+}
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon::before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon::after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+#heroPage {
+  height: 100vh;
+  padding-bottom: 4rem;
+  background-color: #0cbaba;
+  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+  display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.hero-page {
+  width: 80%;
+  height: 85%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 2rem;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  color: #ddd;
+}
+
+.hero_description {
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+}
+
+.hero_description p,
+.btn {
+  margin: 2rem 0;
+  line-height: 2rem;
+}
+
+.hero_description .name {
+  font-weight: bold;
+  font-size: 2.7rem;
+  color: #fff;
+  font-family: "Cinzel Decorative";
+}
+
+.btn,
+#contact input:last-child {
+  outline: 0.2rem solid rgb(167, 8, 8);
+  outline-offset: -0.5rem;
+  border: none;
+  padding: 0.7rem 1.3rem;
+  border-radius: 1rem;
+  text-transform: capitalize;
+  background-color: #fff;
+  font-family: Courgette;
+  font-weight: 700;
+  margin-right: 2rem;
+}
+
+.btn:hover {
+  background-color: #ffa285;
+  padding: 0.7rem 2rem;
+}
+
+.btn:active {
+  position: relative;
+  top: 0.1rem;
+}
+
+.hero_image img {
+  max-width: 300px;
+  border-radius: 3rem;
+  border: 6px solid #fff;
+  box-shadow: 0px 0px 5px #fff;
+  transform: scaleX(-1);
+}
+
+#heroPage h1 {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.profession {
+  font-family: Dancing Script;
+  font-weight: 700;
+}
+
+#about {
+  background-color: #b3cdd1;
+  background-image: linear-gradient(315deg, #b3cdd1 0%, #9fa4c4 74%);
+  display: grid;
+  gap: 0.5rem;
+  overflow: hidden;
+  padding: 2rem;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.about_image img {
+  max-width: 100%;
+  border-radius: 2rem;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.2);
+}
+
+.abt {
+  max-width: 38rem;
+  margin: 1rem auto;
+  color: #333;
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.aboutme {
+  text-align: justify;
+}
+
+h3 {
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 1rem;
+  width: 25rem;
+}
+
+.skills button {
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  border: none;
+  font-weight: bold;
+  margin-right: 2rem;
+}
+
+.skills button:hover {
+  background-color: #ffa285;
+}
+
+.abt p {
+  font-family: Scheherazade New;
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  line-height: 3.5rem;
+}
+
+.certifications img:hover {
+  border: 2px ridge #ffa285;
+}
+
+#portfolio {
+  padding: 2rem;
+  background-color: #a4508b;
+  background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+}
+
+#portfolio h3 {
+  margin: 0 auto;
+  font-size: 2rem;
+  padding: 0.5rem;
+  color: #111;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.projects {
+  display: grid;
+  padding: 2rem;
+  text-align: center;
+  gap: 2rem;
+}
+
+.project {
+  height: 20rem;
+  opacity: 1;
+  margin-bottom: 3rem;
+}
+
+.project::after {
+  content: "Launch 👆!";
+  display: block;
+  text-align: center;
+  color: #000;
+  font-size: 1.7rem;
+  font-weight: bold;
+  font-family: Courgette;
+  background-color: #ddd;
+  width: 10rem;
+  margin: 0 auto;
+  border-radius: 2rem;
+  padding: 0.2rem;
+  border: 2px solid #ffa285;
+}
+.project img {
+  height: 100%;
+  width: 25rem;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+.project img:hover {
+  border: 2px solid #ffa285;
+  position: relative;
+  left: 0.5rem;
+  opacity: 0.8;
+}
+
+#contact {
+  background-color: #ddd;
+  padding: 2rem;
+}
+
+fieldset {
+  padding: 2rem 0 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #aaa;
+  border-radius: 1rem;
+  border: none;
+}
+
+legend {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  background-color: #000;
+  outline: 0.2rem double #333;
+  outline-offset: 0.2rem;
+}
+
+form {
+  max-width: 70rem;
+  margin: 2rem auto;
+  font-size: 1.5rem;
+}
+
+#contact input,
+#contact textarea {
+  display: block;
+  width: 35rem;
+  min-width: 50%;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+}
+
+#contact input:not(:last-child):focus,
+#contact textarea:focus {
+  background-color: rgba(160, 248, 160, 0.508);
+  box-shadow: 0px 0px 5px rgba(36, 69, 255, 0.5);
+}
+
+#contact input:not(:last-child):hover,
+#contact textarea:hover {
+  box-shadow: 0px 0px 10px rgba(36, 69, 255, 0.809);
+}
+
+#contact input:last-child:hover {
+  background-color: #ffa285;
+}
+
+.form_input {
+  outline: none;
+  border: 1.5px solid #000;
+}
+
+.labels {
+  display: block;
+  padding: 0.5rem 0;
+  text-transform: capitalize;
+}
+
+.contact-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #000;
+  padding: 2rem 1rem;
+  font-size: 1.5rem;
+}
+
+.contact-links a {
+  text-decoration: none;
+}
+
+.contact-details,
+.fab,
+.fas {
+  color: #fff;
+}
+
+@media (min-width: 50rem) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 1.5rem 2rem;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+  .hero-page {
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+  .hero_image img {
+    width: 330px;
+    height: 290px;
+    border-radius: 50%;
+  }
+
+  .hero_description p {
+    font-size: 2rem;
+  }
+
+  .hero_description .name {
+    font-size: 3rem;
+  }
+
+  #about {
+    grid-template-columns: auto auto;
+  }
+
+  #about .certifications {
+    margin: 1rem 0;
+  }
+
+  .about_image {
+    margin: 0 1rem;
+  }
+
+  .aboutme {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .projects {
+    grid-template-columns: auto auto;
+  }
+
+  .project img {
+    width: 35rem;
+  }
+}
